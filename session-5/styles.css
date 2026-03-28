@@ -1,55 +1,98 @@
-* {
-  margin: 0;
-  padding: 0;
+.container {
+  height: 300px;
+  width: 300px;
+  background-color: grey;
 }
 
-.container {
-  background-color: lightgray;
-  height: 100vh;
+.container:hover {
+  background-color: red;
+}
 
-  display: flex;
-  /* flex-direction: column-reverse; */
-  /* flex-direction: column; */
-  /* flex-direction: row; */
-  /* flex-direction: row-reverse; */
+.container::after {
+  content: "psudo element";
+  height: 300px;
+  width: 300px;
+  background-color: yellow;
+}
 
-  /* justify-content: flex-end; */
-  /* justify-content: center; */
-  /* justify-content: space-evenly; */
-  /* justify-content: space-between; */
-  /* justify-content: space-around; */
-
-  /* align-items: center; */
-  /* align-items: flex-end; */
-  /* align-items: stretch; */
-
-  justify-content: space-between;
-  align-items: center;
-  /* gap: 10px; */
-  /* flex-wrap: wrap; */
+/* Positions */
+.wrapper {
+  position: relative;
+  background-color: lightblue;
 }
 
 .box {
-  width: 100px;
   height: 100px;
-  flex-shrink: 0;
+  width: 100px;
 }
 
-.box-1 { 
-  background-color: tomato; 
-  /* order: 2 */
-  /* flex-grow: 4; */
+.box1 {
+  /* position: relative;
+  bottom: 10px; */
+  background-color: blue;
 }
 
-.box-2 { 
-  background-color: dodgerblue;
-  /* order: 1; */
-  /* flex-grow: 1; */
-  /* align-self: flex-end; */
+.box2 {
+  background-color: red;
 }
 
-.box-3 { 
-  background-color: mediumseagreen;
-  /* order: 3; */
-  /* flex-grow: 1; */
+.box3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: green;
+}
+
+.chat {
+  height: 50px;
+  width: 50px;
+  background-color: navy;
+  color: white;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.heading {
+  position: sticky;
+  top: 0;
+}
+
+.box4 {
+  margin-top: 50px;
+  background-color: lightsalmon;
+  /* transform: rotate(45deg) */
+  /* transform: scale(0.5); */
+  /* transform: translateX(100px); */
+  /* transform: translateY(100px); */
+  /* transform: translate(100px, 100px); */
+
+  transition: all 1s ease-in-out;
+}
+
+.box4:hover {
+  /* opacity: 0;
+  transform: translateX(50px); */
+  background-color: black;
+}
+
+.box5 {
+  margin-top: 50px;
+  background-color: lightslategrey;
+  border-radius: 50%;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
