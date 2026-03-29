@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  /* width: 800px; */
+  width: 80%;
+  max-width: 800px;
+  min-width: 100px;
+  height: 200px;
+  background-color: coral;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+}
+
+@media (max-width: 700px) and (min-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+}

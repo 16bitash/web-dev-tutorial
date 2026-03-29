@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <form action="https://url-to-our-backend.com" method="post">
+    <label for="name">Name:</label>
+    <input id="name" name="name" type="text" placeholder="Placeholder" />
+
+    <br />
+
+    <label for="email">Email:</label>
+    <input id="email" name="email" type="email" required />
+
+    <br />
+
+    <label for="name">Gender:</label>
+    <input type="radio" name="gender" required>Male</input>
+    <input type="radio" name="gender" required>Female</input>
+
+    <br />
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob" />
+
+    <br />
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" />
+
+    <br />
+
+    <label for="phone">Phone:</label>
+    <input type="tel" name="phone" id="phone" />
+
+    <br />
+
+    <label for="genre">Favorite song genre:</label>
+    <select name="genre" id="genre">
+      <option value="pop">Pop</option>
+      <option value="rock">Rock</option>
+      <option value="hiphop">Hiphop</option>
+    </select>
+
+    <br />
+
+    <label for="range">Range:</label>
+    <input type="range" name="range" id="range" min="0" max="100" value="50" />
+
+    <br />
+
+    <label for="file">File:</label>
+    <input type="file" name="file" id="file" />
+
+    <br />
+
+    <label for="submit">Submit:</label>
+    <input id="submit" type="submit" value="Submit" />
+
+  </form>
+
+  <div class="box"></div>
+
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+</body>
+</html>
